@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 343016550}
   - component: {fileID: 343016552}
   - component: {fileID: 343016549}
+  - component: {fileID: 343016553}
   m_Layer: 0
   m_Name: Triangle
   m_TagString: Untagged
@@ -154,6 +155,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b18e088d7e0f9b4ca18d90f87b6feb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb2D: {fileID: 0}
+  shooterBehavior: {fileID: 0}
 --- !u!212 &343016550
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -242,6 +245,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &343016553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 343016548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43325e749e4cbbf48b513e8daa3a8bdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 4104539575830148569, guid: 77175c38ceba23b46a99dac55b41ef5b, type: 3}
+  speed: 20
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
